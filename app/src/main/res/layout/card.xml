@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="6dp"
+    android:layout_marginLeft="12dp"
+    app:cardBackgroundColor="@color/primaryTextColor"
+    app:cardCornerRadius="50dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_card"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_title_card"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="40dp"
+            android:layout_toEndOf="@+id/iv_card"
+            android:text="Hello"
+            android:textColor="#373737"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_descrip_card"
+            android:layout_width="179dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toEndOf="@+id/iv_card"
+            android:text="STCW requires all seafarers to receive familiarisation and basic safety training or instruction in accordance with section A-VI/1 of the STCW Code"
+            android:textColor="@color/secondaryDarkColor"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

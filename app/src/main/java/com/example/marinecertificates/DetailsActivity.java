@@ -93,6 +93,7 @@ public class DetailsActivity extends AppCompatActivity implements DatePickerDial
         item.setAddedDate(  Calendar.getInstance().getTime());
         ((MarineCertificatesApp) getApplication()).myProfileList.addItem(item);
 
+        ((MarineCertificatesApp) getApplication()).saveData();
         onBackPressed();
         Toast.makeText(getApplicationContext(),"Your certificate has been added to your profile", Toast.LENGTH_LONG).show();
 

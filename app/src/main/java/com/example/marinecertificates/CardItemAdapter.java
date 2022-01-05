@@ -50,6 +50,8 @@ public class CardItemAdapter extends ArrayAdapter<CardItem> {
             validTV = (TextView) convertView.findViewById(R.id.tv_profile_status);
             iconIV = (ImageView) convertView.findViewById(R.id.iv_icon);
             tvType = (TextView) convertView.findViewById(R.id.tv_profile_type);
+            tvDescription = (TextView) convertView.findViewById(R.id.tv_descrip_card);
+
 
             tvType.setText(cardItem.getItemType());
 

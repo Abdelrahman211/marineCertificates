@@ -94,6 +94,7 @@ public class CardItemAdapter extends ArrayAdapter<CardItem> {
         tvDescription.setText(cardItem.getDescription());
 
 
+
         return convertView;
     }
 }

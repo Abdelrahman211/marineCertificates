@@ -1,6 +1,7 @@
 package com.example.marinecertificates.fragments;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -62,6 +63,14 @@ public class ProfileFragment extends Fragment {
         updateDataLists();
         setUpList();
         setUpOnclickListener();
+        allBtn.setEnabled(false);
+        allBtn.setTextColor(Color.BLACK);
+        validBtn.setEnabled(true);
+        expiredBtn.setEnabled(true);
+
+        allBtn.setTextColor(Color.BLACK);
+        validBtn.setTextColor(Color.WHITE);
+        expiredBtn.setTextColor(Color.WHITE);
 
 
 
@@ -122,6 +131,13 @@ public class ProfileFragment extends Fragment {
                 inList = "valid";
                 adapter = new CardItemAdapter((requireActivity().getApplicationContext()),0, mValidList,true);
                 listView.setAdapter(adapter);
+                allBtn.setEnabled(true);
+                validBtn.setEnabled(false);
+                expiredBtn.setEnabled(true);
+
+                allBtn.setTextColor(Color.WHITE);
+                validBtn.setTextColor(Color.BLACK);
+                expiredBtn.setTextColor(Color.WHITE);
 
             }
         });
@@ -133,6 +149,13 @@ public class ProfileFragment extends Fragment {
                 inList = "expired";
                 adapter = new CardItemAdapter((requireActivity().getApplicationContext()),0, mExpiredList,true);
                 listView.setAdapter(adapter);
+                allBtn.setEnabled(true);
+                validBtn.setEnabled(true);
+                expiredBtn.setEnabled(false);
+
+                allBtn.setTextColor(Color.WHITE);
+                validBtn.setTextColor(Color.WHITE);
+                expiredBtn.setTextColor(Color.BLACK);
 
             }
         });
@@ -144,6 +167,13 @@ public class ProfileFragment extends Fragment {
                 inList = "all";
                 adapter = new CardItemAdapter((requireActivity().getApplicationContext()),0, mAllList,true);
                 listView.setAdapter(adapter);
+                allBtn.setEnabled(false);
+                validBtn.setEnabled(true);
+                expiredBtn.setEnabled(true);
+
+                allBtn.setTextColor(Color.BLACK);
+                validBtn.setTextColor(Color.WHITE);
+                expiredBtn.setTextColor(Color.WHITE);
             }
         });
 

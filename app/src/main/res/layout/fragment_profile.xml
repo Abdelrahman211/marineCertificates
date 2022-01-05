@@ -26,7 +26,7 @@
             android:layout_height="match_parent"
             android:text="All"
             android:id="@+id/bnt_all_crt"
-            android:background="@color/secondaryLightColor"
+            android:background="@color/secondaryTextColor"
             android:textColor="@color/secondaryLightColor"/>
 
         <Button

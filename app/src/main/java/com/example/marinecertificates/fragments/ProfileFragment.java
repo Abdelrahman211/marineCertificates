@@ -1,4 +1,4 @@
-package com.example.marinecertificates;
+package com.example.marinecertificates.fragments;
 
 import android.os.Bundle;
 
@@ -7,11 +7,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.SearchView;
 
-import java.util.ArrayList;
+import com.example.marinecertificates.adapters.CardItemAdapter;
+import com.example.marinecertificates.MarineCertificatesApp;
+import com.example.marinecertificates.models.ProfileList;
+import com.example.marinecertificates.R;
 
 
 public class ProfileFragment extends Fragment {

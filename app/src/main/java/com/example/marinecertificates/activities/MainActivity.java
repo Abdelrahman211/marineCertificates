@@ -1,4 +1,4 @@
-package com.example.marinecertificates;
+package com.example.marinecertificates.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -7,6 +7,12 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import com.example.marinecertificates.fragments.CorFragment;
+import com.example.marinecertificates.fragments.CrtFragment;
+import com.example.marinecertificates.fragments.HomeFragment;
+import com.example.marinecertificates.fragments.PendingFragment;
+import com.example.marinecertificates.fragments.ProfileFragment;
+import com.example.marinecertificates.R;
 
 public class MainActivity extends AppCompatActivity
 {

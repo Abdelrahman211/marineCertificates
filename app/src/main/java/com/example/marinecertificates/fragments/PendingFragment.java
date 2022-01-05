@@ -1,4 +1,4 @@
-package com.example.marinecertificates;
+package com.example.marinecertificates.fragments;
 
 import android.os.Bundle;
 
@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SearchView;
+
+import com.example.marinecertificates.R;
 
 
 public class PendingFragment extends Fragment {

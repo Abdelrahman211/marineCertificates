@@ -1,4 +1,4 @@
-package com.example.marinecertificates;
+package com.example.marinecertificates.models;
 
 import java.util.ArrayList;
 

@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 
+import com.example.marinecertificates.models.CardItem;
+import com.example.marinecertificates.models.ProfileList;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

@@ -1,4 +1,4 @@
-package com.example.marinecertificates;
+package com.example.marinecertificates.models;
 
 import java.util.Date;
 
@@ -12,20 +12,7 @@ public class CardItem
     private String itemType;
     private Date addedDate;
     private String description;
-    int yearPeriod;
-
-    public void setYearPeriod(int yearPeriod) {
-        this.yearPeriod = yearPeriod;
-    }
-
-    public String getItemType() {
-        return itemType;
-    }
-
-    public void setItemType(String itemType) {
-        this.itemType = itemType;
-    }
-
+    private int yearPeriod;
 
 
 
@@ -39,51 +26,55 @@ public class CardItem
 
     }
 
+    // setters
 
     public String getId() {
         return id;
     }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getImage() {
         return image;
     }
     public int getYearPeriod() {
         return yearPeriod;
     }
-
-    public void setImage(int image) {
-        this.image = image;
-    }
-
     public Date getDate() { return date; }
-
-    public void setDate(Date date) { this.date = date; }
-
     public String getDescription() {
         return description;
     }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public Date getAddedDate() {
         return addedDate;
     }
+    public String getItemType() {
+        return itemType;
+    }
 
+
+    //getters
+    public void setId(String id) {
+        this.id = id;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setImage(int image) {
+        this.image = image;
+    }
+    public void setDate(Date date) { this.date = date; }
+    public void setDescription(String description) {
+        this.description = description;
+    }
     public void setAddedDate(Date addedDate) {
         this.addedDate = addedDate;
     }
+    public void setYearPeriod(int yearPeriod) {
+        this.yearPeriod = yearPeriod;
+    }
+    public void setItemType(String itemType) {
+        this.itemType = itemType;
+    }
+
+
 }

@@ -1,4 +1,4 @@
-package com.example.marinecertificates;
+package com.example.marinecertificates.adapters;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.marinecertificates.models.CardItem;
+import com.example.marinecertificates.R;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -62,7 +65,7 @@ public class CardItemAdapter extends ArrayAdapter<CardItem> {
             Date currDate = Calendar.getInstance().getTime();
             Calendar cal = Calendar.getInstance();
             cal.setTime(cardItem.getDate());
-            cal.add(Calendar.YEAR,cardItem.yearPeriod);
+            cal.add(Calendar.YEAR,cardItem.getYearPeriod());
 
 
 

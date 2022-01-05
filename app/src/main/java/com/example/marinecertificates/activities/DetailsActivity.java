@@ -1,4 +1,4 @@
-package com.example.marinecertificates;
+package com.example.marinecertificates.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,12 @@ import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.marinecertificates.models.CardItem;
+import com.example.marinecertificates.fragments.CorFragment;
+import com.example.marinecertificates.fragments.CrtFragment;
+import com.example.marinecertificates.MarineCertificatesApp;
+import com.example.marinecertificates.R;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -59,9 +65,9 @@ public class DetailsActivity extends AppCompatActivity implements DatePickerDial
         String parsedStringID = previousIntent.getStringExtra("id");
         String fromFrag = previousIntent. getStringExtra("from");
         if (fromFrag .equals("crt"))
-            selectedItem = CrtFragment .CrtList.get(Integer.valueOf(parsedStringID));
+            selectedItem = CrtFragment.CrtList.get(Integer.valueOf(parsedStringID));
         else
-            selectedItem = CorFragment .CorList.get(Integer.valueOf(parsedStringID));
+            selectedItem = CorFragment.CorList.get(Integer.valueOf(parsedStringID));
     }
 
     private void setValues()

@@ -1,4 +1,4 @@
-package com.example.marinecertificates;
+package com.example.marinecertificates.fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,11 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SearchView;
+
+import com.example.marinecertificates.models.CardItem;
+import com.example.marinecertificates.adapters.CardItemAdapter;
+import com.example.marinecertificates.R;
+import com.example.marinecertificates.activities.DetailsActivity;
 
 import java.util.ArrayList;
 

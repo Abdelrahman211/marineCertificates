@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:paddingTop="225dp"
     app:layoutDescription="@xml/fragment_home_scene"
-    tools:context=".HomeFragment">
+    tools:context=".fragments.HomeFragment">
 
     <LinearLayout
         android:id="@+id/Layout_cer"

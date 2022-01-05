@@ -1,5 +1,7 @@
 package com.example.marinecertificates.models;
 
+import androidx.annotation.NonNull;
+
 import java.util.Date;
 
 public class CardItem

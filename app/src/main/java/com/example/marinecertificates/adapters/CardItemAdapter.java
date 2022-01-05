@@ -53,7 +53,6 @@ public class CardItemAdapter extends ArrayAdapter<CardItem> {
             validTV = (TextView) convertView.findViewById(R.id.tv_profile_status);
             iconIV = (ImageView) convertView.findViewById(R.id.iv_icon);
             tvType = (TextView) convertView.findViewById(R.id.tv_profile_type);
-            tvDescription = (TextView) convertView.findViewById(R.id.tv_descrip_card);
 
 
             tvType.setText(cardItem.getItemType());
@@ -90,13 +89,14 @@ public class CardItemAdapter extends ArrayAdapter<CardItem> {
             tv = (TextView) convertView.findViewById(R.id.tv_title_card);
             iv = (ImageView) convertView.findViewById(R.id.iv_card);
             tvDescription = (TextView) convertView.findViewById(R.id.tv_descrip_card);
+            tvDescription.setText(cardItem.getDescription());
+
 
         }
 
 
         tv.setText(cardItem.getName());
         iv.setImageResource(cardItem.getImage());
-        tvDescription.setText(cardItem.getDescription());
 
 
 

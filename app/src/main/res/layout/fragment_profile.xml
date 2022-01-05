@@ -27,7 +27,6 @@
             android:text="All"
             android:id="@+id/bnt_all_crt"
             android:background="@color/secondaryLightColor"
-            android:onClick="allFilterTapped"
             android:textColor="@color/secondaryLightColor"/>
 
         <Button
@@ -37,7 +36,6 @@
             android:text="Triangle"
             android:id="@+id/bnt_valid_crt"
             android:background="@color/secondaryLightColor"
-            android:onClick="triangleFilterTapped"
             android:textColor="@color/secondaryLightColor"/>
 
         <Button
@@ -47,7 +45,6 @@
             android:text="Square"
             android:id="@+id/bnt_expired_crt"
             android:background="@color/secondaryLightColor"
-            android:onClick="squareFilterTapped"
             android:textColor="@color/secondaryLightColor"/>
 
     </LinearLayout>

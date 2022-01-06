@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,11 +32,15 @@ public class DetailsProfileActivity extends AppCompatActivity implements DatePic
 
 
 
-    Button deleteBtn;
-    Button modifyBtn;
-    CardItem selectedItem;
-    String  parsedIntID;
-    TextView dateTV;
+    private Button deleteBtn;
+    private Button modifyBtn;
+    private CardItem selectedItem;
+    private String  parsedIntID;
+    private TextView dateTV;
+    private TextView tvId;
+    private ImageView ivProfileDetails;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +52,7 @@ public class DetailsProfileActivity extends AppCompatActivity implements DatePic
         dateTV = findViewById(R.id.date_profile_text);
         getSelectedItem();
         updateViews();
+        setValues();
 
         modifyBtn.setOnClickListener(new View.OnClickListener()
         {
@@ -107,4 +113,17 @@ public class DetailsProfileActivity extends AppCompatActivity implements DatePic
         Toast.makeText(getApplicationContext(),"Your certificate or course has been updated", Toast.LENGTH_LONG).show();
 
     }
+    private void setValues()
+    {
+        TextView tv = (TextView) findViewById(R.id.tv_profile_details);
+        ImageView iv = (ImageView) findViewById(R.id.iv_profile_details);
+
+
+        tv.setText(selectedItem.getName());
+        iv.setImageResource(selectedItem.getImage());
+
+
+
+    }
+
 }

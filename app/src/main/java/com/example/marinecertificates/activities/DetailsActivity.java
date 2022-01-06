@@ -26,7 +26,7 @@ import java.util.GregorianCalendar;
 
 public class DetailsActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
-    CardItem selectedItem;
+    private CardItem selectedItem;
     private TextView dateText;
     private Button btnAdd;
 

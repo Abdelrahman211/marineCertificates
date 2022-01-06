@@ -14,7 +14,7 @@ android:layout_marginRight="6dp">
 <androidx.cardview.widget.CardView
     android:id="@+id/cardView_profile"
     android:layout_width="357dp"
-    android:layout_height="350dp"
+    android:layout_height="380dp"
     android:layout_marginTop="100dp"
     android:layout_marginLeft="6dp"
     android:layout_marginRight="6dp"
@@ -37,12 +37,28 @@ android:layout_marginRight="6dp">
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center|top"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="260dp"
         android:layout_marginBottom="50dp"
         android:gravity="center"
         android:text="STCW Certificate"
         android:textColor="#373737"
-        android:textSize="28sp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/date_hint_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center|bottom"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="The issuing date is"
+        android:textColor="@color/secondaryDarkColor"
+        android:textSize="22sp"
         android:textStyle="bold" />
 
 
@@ -56,7 +72,7 @@ android:layout_marginRight="6dp">
         android:layout_alignParentBottom="true"
         android:layout_gravity="center|bottom"
         android:gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="8dp"
         android:text="select the issuing date"
         android:textColor="#0A9C10"
         android:textSize="18sp"
@@ -65,7 +81,7 @@ android:layout_marginRight="6dp">
     <ImageView
         android:id="@+id/iv_profile_details"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="250dp"
         android:scaleType="centerCrop" />
 </androidx.cardview.widget.CardView>
 
@@ -79,16 +95,16 @@ android:layout_marginRight="6dp">
         android:elevation="50dp"
         android:selectAllOnFocus="true"
         android:text="Modify"
-        android:textStyle="bold"
         android:textColor="@color/secondaryLightColor"
         android:textIsSelectable="false"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.80"
+        app:layout_constraintHorizontal_bias="0.803"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView_profile"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.255" />
 
     <Button
         android:id="@+id/btn_delete"
@@ -100,16 +116,16 @@ android:layout_marginRight="6dp">
         android:elevation="50dp"
         android:selectAllOnFocus="true"
         android:text="Delete"
-        android:textStyle="bold"
         android:textColor="@color/secondaryLightColor"
         android:textIsSelectable="false"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView_profile"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.255" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -69,7 +69,7 @@ public class CardItemAdapter extends ArrayAdapter<CardItem> {
 
 
             if(currDate.after(cal.getTime())){
-                validTV.setText("invalid");
+                validTV.setText("Expired");
                 validTV.setTextColor(Color.parseColor("#F34235"));
                 iconIV.setImageResource(R.drawable.expierd);
 

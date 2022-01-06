@@ -50,31 +50,31 @@ public class CorFragment extends Fragment {
 
     private void setupData()
     {
-        CardItem circle = new CardItem("0", "STCW", R.drawable.stcw,5,"Certificate" ,getResources().getString(R.string.STCW_Discrip));
+        CardItem circle = new CardItem("0", "STCW", R.drawable.stcw_cor,5,"Certificate" ,getResources().getString(R.string.STCW_Discrip));
         CorList.add(circle);
 
-        CardItem triangle = new CardItem("1","Marine Safety", R.drawable.lng,5,"Certificate",getResources().getString(R.string.MarineSafety_Discrip));
+        CardItem triangle = new CardItem("1","Marine Safety", R.drawable.mar_sfty_cor,5,"Certificate",getResources().getString(R.string.MarineSafety_Discrip));
         CorList.add(triangle);
 
-        CardItem square = new CardItem("2","Offshore", R.drawable.stcw,4,"Certificate",getResources().getString(R.string.Offshore_Discrip));
+        CardItem square = new CardItem("2","Offshore", R.drawable.offshore_cor,4,"Certificate",getResources().getString(R.string.Offshore_Discrip));
         CorList.add(square);
 
-        CardItem rectangle = new CardItem("3","Marine Simulators", R.drawable.lng,5,"Certificate",getResources().getString(R.string.MarineSimulators_Discrip));
+        CardItem rectangle = new CardItem("3","Marine Simulators", R.drawable.simulators_cor,5,"Certificate",getResources().getString(R.string.MarineSimulators_Discrip));
         CorList.add(rectangle);
 
-        CardItem octagon = new CardItem("4","Environmental Protection", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.EnvironmentalProtection_Discrip));
+        CardItem octagon = new CardItem("4","Environmental Protection", R.drawable.enviro_cor,5,"Certificate",getResources().getString(R.string.EnvironmentalProtection_Discrip));
         CorList.add(octagon);
 
-        CardItem triangle2 = new CardItem("6","GMDSS", R.drawable.stcw,5,"Course",getResources().getString(R.string.GMDSS_Discrip));
+        CardItem triangle2 = new CardItem("6","GMDSS", R.drawable.gmdss_cor,5,"Course",getResources().getString(R.string.GMDSS_Discrip));
         CorList.add(triangle2);
 
-        CardItem square2 = new CardItem("7","Diving", R.drawable.lng,5,"Course",getResources().getString(R.string.Diving_Discrip));
+        CardItem square2 = new CardItem("7","Diving", R.drawable.diving_cor,5,"Course",getResources().getString(R.string.Diving_Discrip));
         CorList.add(square2);
 
-        CardItem rectangle2 = new CardItem("8","Natural Gas & Petrochemicals", R.drawable.stcw,5,"Course",getResources().getString(R.string.NaturalGas_Petrochemicals_Discrip));
+        CardItem rectangle2 = new CardItem("8","Natural Gas & Petrochemicals", R.drawable.ngas_cor,5,"Course",getResources().getString(R.string.NaturalGas_Petrochemicals_Discrip));
         CorList.add(rectangle2);
 
-        CardItem octagon2 = new CardItem("9","Meteorology & Hydrographic Survey", R.drawable.lng,5,"Course",getResources().getString(R.string.Meteorology_HydrographicSurvey_Discrip));
+        CardItem octagon2 = new CardItem("9","Meteorology & Hydrographic Survey", R.drawable.meteo_cor,5,"Course",getResources().getString(R.string.Meteorology_HydrographicSurvey_Discrip));
         CorList.add(octagon2);
     }
 

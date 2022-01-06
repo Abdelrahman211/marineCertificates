@@ -54,29 +54,22 @@ public class CrtFragment extends Fragment {
         CardItem triangle = new CardItem("1","Chief Officer", R.drawable.lng,5,"Certificate",getResources().getString(R.string.ChiefOfficer_Discrip));
         CrtList.add(triangle);
 
-        CardItem square = new CardItem("2","Third Officer", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.ThirdOfficer_Discrip));
-        CrtList.add(square);
-
-        CardItem rectangle = new CardItem("3","LNG SHIPS", R.drawable.lng,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
-        CrtList.add(rectangle);
-
-        CardItem octagon = new CardItem("4","STCW", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
-        CrtList.add(octagon);
-
-        CardItem circle2 = new CardItem("5", "LNG SHIPS 2", R.drawable.lng,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
+        CardItem circle2 = new CardItem("2", "Second Officer", R.drawable.lng,5,"Certificate",getResources().getString(R.string.SecondOfficer_Discrip));
         CrtList.add(circle2);
 
-        CardItem triangle2 = new CardItem("6","STCW 2", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
+        CardItem square = new CardItem("3","Third Officer", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.ThirdOfficer_Discrip));
+        CrtList.add(square);
+
+        CardItem octagon = new CardItem("4","Chief Engineer", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.ChiefEngineer_Discrip));
+        CrtList.add(octagon);
+
+        CardItem rectangle = new CardItem("5","Second Engineer", R.drawable.lng,5,"Certificate",getResources().getString(R.string.SecondEngineer_Discrip));
+        CrtList.add(rectangle);
+
+
+        CardItem triangle2 = new CardItem("6","Third Engineer", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.ThirdEngineer_Discrip));
         CrtList.add(triangle2);
 
-        CardItem square2 = new CardItem("7","LNG SHIPS 2", R.drawable.lng,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
-        CrtList.add(square2);
-
-        CardItem rectangle2 = new CardItem("8","STCW 2", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
-        CrtList.add(rectangle2);
-
-        CardItem octagon2 = new CardItem("9","LNG SHIPS 2", R.drawable.lng,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
-        CrtList.add(octagon2);
     }
 
     private void setUpList()

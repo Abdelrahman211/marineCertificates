@@ -48,34 +48,34 @@ public class CrtFragment extends Fragment {
 
     private void setupData()
     {
-        CardItem circle = new CardItem("0", "STCW", R.drawable.stcw,2,"Certificate","nwehjfbjwebh ");
+        CardItem circle = new CardItem("0", "STCW", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.STCWCRT_Discrip));
         CrtList.add(circle);
 
-        CardItem triangle = new CardItem("1","LNG SHIPS", R.drawable.lng,3,"Certificate","uij rgr g");
+        CardItem triangle = new CardItem("1","Chief Officer", R.drawable.lng,5,"Certificate",getResources().getString(R.string.ChiefOfficer_Discrip));
         CrtList.add(triangle);
 
-        CardItem square = new CardItem("2","STCW", R.drawable.stcw,4,"Certificate","jr nhur v");
+        CardItem square = new CardItem("2","Third Officer", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.ThirdOfficer_Discrip));
         CrtList.add(square);
 
-        CardItem rectangle = new CardItem("3","LNG SHIPS", R.drawable.lng,2,"Certificate","jjg urg r gr ");
+        CardItem rectangle = new CardItem("3","LNG SHIPS", R.drawable.lng,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
         CrtList.add(rectangle);
 
-        CardItem octagon = new CardItem("4","STCW", R.drawable.stcw,6,"Certificate","jojkfjrgrg ");
+        CardItem octagon = new CardItem("4","STCW", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
         CrtList.add(octagon);
 
-        CardItem circle2 = new CardItem("5", "LNG SHIPS 2", R.drawable.lng,6,"Certificate","hu hufb r");
+        CardItem circle2 = new CardItem("5", "LNG SHIPS 2", R.drawable.lng,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
         CrtList.add(circle2);
 
-        CardItem triangle2 = new CardItem("6","STCW 2", R.drawable.stcw,4,"Certificate","uieh fuheu ");
+        CardItem triangle2 = new CardItem("6","STCW 2", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
         CrtList.add(triangle2);
 
-        CardItem square2 = new CardItem("7","LNG SHIPS 2", R.drawable.lng,3,"Certificate","k nej ne fe ");
+        CardItem square2 = new CardItem("7","LNG SHIPS 2", R.drawable.lng,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
         CrtList.add(square2);
 
-        CardItem rectangle2 = new CardItem("8","STCW 2", R.drawable.stcw,4,"Certificate","jnj rngr g");
+        CardItem rectangle2 = new CardItem("8","STCW 2", R.drawable.stcw,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
         CrtList.add(rectangle2);
 
-        CardItem octagon2 = new CardItem("9","LNG SHIPS 2", R.drawable.lng,6,"Certificate","okoke nfieji g");
+        CardItem octagon2 = new CardItem("9","LNG SHIPS 2", R.drawable.lng,5,"Certificate",getResources().getString(R.string.STCW_Discrip));
         CrtList.add(octagon2);
     }
 

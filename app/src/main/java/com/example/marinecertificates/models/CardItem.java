@@ -1,7 +1,5 @@
 package com.example.marinecertificates.models;
 
-import androidx.annotation.NonNull;
-
 import java.util.Date;
 
 public class CardItem
@@ -18,7 +16,7 @@ public class CardItem
 
 
 
-    public CardItem(String id, String name, int image, int yearPeriod, String itemType,String description) {
+    public CardItem(String id, String name, int image, int yearPeriod, String itemType, String description) {
         this.id = id;
         this.name = name;
         this.image = image;
@@ -27,6 +25,8 @@ public class CardItem
         this.description = description;
 
     }
+
+
 
     // setters
 

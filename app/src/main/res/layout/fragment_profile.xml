@@ -6,18 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".fragments.CrtFragment">
 
-    <SearchView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/sv_profile"
-        android:iconifiedByDefault="false"
-        android:queryHint="Search"
-        android:background="@color/secondaryLightColor"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
 
 
         <Button
@@ -25,27 +21,32 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:text="All"
+            android:textStyle="bold"
             android:id="@+id/bnt_all_crt"
-            android:background="@color/secondaryTextColor"
+            android:background="@drawable/left_filter_btn"
             android:textColor="@color/secondaryLightColor"/>
+
 
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="Triangle"
-            android:id="@+id/bnt_valid_crt"
-            android:background="@color/secondaryLightColor"
-            android:textColor="@color/secondaryLightColor"/>
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:text="Square"
+            android:text="Valid"
+            android:textStyle="bold"
             android:id="@+id/bnt_expired_crt"
-            android:background="@color/secondaryLightColor"
+            android:background="@drawable/mid_filter_btn"
             android:textColor="@color/secondaryLightColor"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Expired"
+            android:textStyle="bold"
+            android:id="@+id/bnt_valid_crt"
+            android:background="@drawable/right_filter_btn"
+            android:textColor="@color/secondaryLightColor"/>
+
 
     </LinearLayout>
 
@@ -56,8 +57,8 @@
 
         <ListView
             android:id="@+id/lv_profile"
-            android:layout_width="match_parent"
-            android:layout_height="588dp"
+            android:layout_width="390dp"
+            android:layout_height="626dp"
             android:divider="@color/primaryTextColor"
             android:dividerHeight="12dp"
             android:drawSelectorOnTop="true"

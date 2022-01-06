@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity
         //Add menu item
         bottomNavigation.add(new MeowBottomNavigation.Model(1,R.drawable.ic_home));
         bottomNavigation.add(new MeowBottomNavigation.Model(2,R.drawable.ic_profile));
-        bottomNavigation.add(new MeowBottomNavigation.Model(3,R.drawable.ic_pending));
 
         bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
             @Override
@@ -55,13 +54,13 @@ public class MainActivity extends AppCompatActivity
             }
         });
         //Set home count
-        bottomNavigation.setCount(3,"10");
+//        bottomNavigation.setCount(2,);
         //Set profile fragment initially selected
         bottomNavigation.show(1,true);
 
         Fragment homefragment = new HomeFragment();
         Fragment profilefragment = new ProfileFragment();
-        Fragment pendingfragment = new PendingFragment();
+
 
 
         loadFragment(homefragment);
@@ -81,11 +80,7 @@ public class MainActivity extends AppCompatActivity
                         //when id is 2
                         //Initialize profile fragment
                         break;
-                    case 3:
-                        fragment=pendingfragment;
-                        //when id is 3
-                        //Initialize pending fragment
-                        break;
+
                     default:
                 }
                 loadFragment(fragment);

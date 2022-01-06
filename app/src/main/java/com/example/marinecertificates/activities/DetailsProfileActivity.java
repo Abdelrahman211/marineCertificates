@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.marinecertificates.MarineCertificatesApp;
 import com.example.marinecertificates.R;
@@ -37,17 +41,22 @@ public class DetailsProfileActivity extends AppCompatActivity implements DatePic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details_profile);
         deleteBtn = findViewById(R.id.btn_delete);
+
+
         modifyBtn = findViewById(R.id.btn_modify);
         dateTV = findViewById(R.id.date_profile_text);
         getSelectedItem();
         updateViews();
 
-        modifyBtn.setOnClickListener(new View.OnClickListener() {
+        modifyBtn.setOnClickListener(new View.OnClickListener()
+        {
             @Override
             public void onClick(View view) {
                 showDatePickerDialog();
             }
+
         });
+
 
 
         deleteBtn.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +65,7 @@ public class DetailsProfileActivity extends AppCompatActivity implements DatePic
                 ((MarineCertificatesApp) getApplication()).myProfileList.removeItem(selectedItem.getId());
                 ((MarineCertificatesApp) getApplication()).saveData();
                 onBackPressed();
+                Toast.makeText(getApplicationContext(),"Your certificate or course has been deleted", Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -64,6 +74,7 @@ public class DetailsProfileActivity extends AppCompatActivity implements DatePic
         DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 
         dateTV.setText(dateFormat.format(selectedItem.getDate()));
+
 
     }
 
@@ -92,6 +103,8 @@ public class DetailsProfileActivity extends AppCompatActivity implements DatePic
          selectedItem.setDate(myDate);
         ((MarineCertificatesApp) getApplication()).saveData();
         updateViews();
+        onBackPressed();
+        Toast.makeText(getApplicationContext(),"Your certificate or course has been updated", Toast.LENGTH_LONG).show();
 
     }
 }

@@ -4,6 +4,5 @@
     <solid android:color="@color/Expired"/>
     <gradient android:startColor="#EA3E31"
         android:endColor="#880D04"/>
-    <stroke android:color="#D6D6D6"/>
-    <stroke android:width="3dp"/>
+
 </shape>

@@ -26,19 +26,20 @@
 
         <Button
             android:id="@+id/btn_crt"
-            style="@style/Widget.MaterialComponents.Button"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:shadowColor="#606060"
+            android:padding="10dp"
+            android:background="@drawable/button"
+            android:elevation="100dp"
+            android:shadowColor="#000000"
             android:text="Certificates"
             android:textColor="#FFFFFF"
             android:textColorHighlight="@color/primaryTextColor"
-            android:textSize="15sp"
+            android:textSize="18sp"
             app:cornerRadius="25dp"
-            app:iconPadding="20dp" />
+            app:iconPadding="20dp"
+            android:textStyle="normal"/>
     </LinearLayout>
 
     <LinearLayout
@@ -57,19 +58,21 @@
 
         <Button
             android:id="@+id/btn_cor"
-            style="@style/Widget.MaterialComponents.Button"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:elevation="100dp"
             android:layout_margin="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:padding="10dp"
             android:shadowColor="#606060"
             android:text="Courses"
             android:textColor="#FFFFFF"
             android:textColorHighlight="@color/primaryTextColor"
-            android:textSize="15sp"
+            android:textSize="18sp"
             app:cornerRadius="25dp"
-            app:iconPadding="20dp" />
+            app:iconPadding="20dp"
+            android:textStyle="normal"/>
+
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

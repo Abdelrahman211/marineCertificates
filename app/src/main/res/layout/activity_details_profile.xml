@@ -78,12 +78,13 @@ android:layout_marginRight="6dp">
         android:elevation="50dp"
         android:selectAllOnFocus="true"
         android:text="Modify"
+        android:textStyle="bold"
         android:textColor="@color/secondaryLightColor"
         android:textIsSelectable="false"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintHorizontal_bias="0.80"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView_profile"
         app:layout_constraintVertical_bias="0.586" />
@@ -98,14 +99,16 @@ android:layout_marginRight="6dp">
         android:elevation="50dp"
         android:selectAllOnFocus="true"
         android:text="Delete"
+        android:textStyle="bold"
         android:textColor="@color/secondaryLightColor"
         android:textIsSelectable="false"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.20"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView_profile"
         app:layout_constraintVertical_bias="0.586" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

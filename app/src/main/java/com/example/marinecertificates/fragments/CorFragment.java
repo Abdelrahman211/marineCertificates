@@ -117,16 +117,16 @@ public class CorFragment extends Fragment {
             public boolean onQueryTextChange(String s)
             {
                 currentSearchText = s;
-                ArrayList<CardItem> filteredShapes = new ArrayList<CardItem>();
+                ArrayList<CardItem> filteredItems = new ArrayList<CardItem>();
                 for (CardItem cardItem: CorList)
                 {
                     if(cardItem.getName().toLowerCase().contains(s.toLowerCase()))
                     {
-                        filteredShapes.add(cardItem);
+                        filteredItems.add(cardItem);
                     }
                 }
 
-                CardItemAdapter adapter = new CardItemAdapter((requireActivity().getApplicationContext()),0, filteredShapes,false);
+                CardItemAdapter adapter = new CardItemAdapter((requireActivity().getApplicationContext()),0, filteredItems,false);
                 listView.setAdapter(adapter);
 
                 return false;

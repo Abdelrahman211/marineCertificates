@@ -27,45 +27,66 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <TextView
-            android:id="@+id/tv_details"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center|top"
-            android:layout_marginTop="170dp"
-            android:layout_marginBottom="50dp"
-            android:gravity="center"
-            android:text="STCW Certificate"
-            android:textColor="#373737"
-            android:textSize="28sp"
-            android:textStyle="bold" />
-
-
-        <TextView
-            android:id="@+id/date_text"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center|bottom"
-            android:gravity="center"
-            android:layout_marginBottom="20dp"
-            android:text="select the issuing date"
-            android:textColor="#0A9C10"
-            android:textSize="16sp"
-            android:textStyle="italic|bold" />
+            android:layout_height="match_parent">
 
-        <ImageView
+            <TextView
+                android:id="@+id/tv_details"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/iv_details"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center|top"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="STCW Certificate"
+                android:textColor="#373737"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_descrip_derails"
+                android:layout_width="179dp"
+                android:layout_height="120dp"
+                android:layout_below="@+id/tv_details"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="45dp"
+                android:text="STCW requires all seafarers to receive familiarisation and basic safety training or instruction in accordance with section A-VI/1 of the STCW Code"
+                android:textColor="@color/secondaryDarkColor"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center|bottom"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="select the issuing date"
+                android:textColor="#0A9C10"
+                android:textSize="20sp"
+                android:textStyle="italic|bold" />
+
+            <ImageView
             android:id="@+id/iv_details"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:scaleType="centerCrop" />
+
+        </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
     <Button
@@ -79,9 +100,10 @@
         android:onClick="squareFilterTapped"
         android:selectAllOnFocus="true"
         android:text="Add"
+        android:textStyle="bold"
         android:textColor="@color/secondaryLightColor"
         android:textIsSelectable="false"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

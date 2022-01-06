@@ -74,10 +74,12 @@ public class DetailsActivity extends AppCompatActivity implements DatePickerDial
     {
         TextView tv = (TextView) findViewById(R.id.tv_details);
         ImageView iv = (ImageView) findViewById(R.id.iv_details);
+        TextView tvDescription = (TextView) findViewById(R.id.tv_descrip_derails);
 
 
         tv.setText(selectedItem.getName());
         iv.setImageResource(selectedItem.getImage());
+        tvDescription.setText(selectedItem.getDescription());
 
 
     }

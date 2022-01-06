@@ -14,7 +14,8 @@ android:layout_marginRight="6dp">
 <androidx.cardview.widget.CardView
     android:id="@+id/cardView_profile"
     android:layout_width="357dp"
-    android:layout_height="641dp"
+    android:layout_height="350dp"
+    android:layout_marginTop="100dp"
     android:layout_marginLeft="6dp"
     android:layout_marginRight="6dp"
     app:cardBackgroundColor="@color/primaryTextColor"
@@ -36,7 +37,7 @@ android:layout_marginRight="6dp">
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center|top"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="210dp"
         android:layout_marginBottom="50dp"
         android:gravity="center"
         android:text="STCW Certificate"
@@ -58,13 +59,13 @@ android:layout_marginRight="6dp">
         android:layout_marginBottom="20dp"
         android:text="select the issuing date"
         android:textColor="#0A9C10"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="italic|bold" />
 
     <ImageView
         android:id="@+id/iv_profile_details"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:scaleType="centerCrop" />
 </androidx.cardview.widget.CardView>
 

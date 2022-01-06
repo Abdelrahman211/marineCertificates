@@ -22,11 +22,11 @@
         <entry key="app/src/main/res/layout/Card.xml" value="0.10326086956521739" />
         <entry key="app/src/main/res/layout/activity_basic.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_crt_page.xml" value="0.10405405405405406" />
-        <entry key="app/src/main/res/layout/activity_details_profile.xml" value="0.375" />
-        <entry key="app/src/main/res/layout/activity_detais.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_details_profile.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_detais.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14917127071823205" />
         <entry key="app/src/main/res/layout/cae.xml" value="0.15405405405405406" />
-        <entry key="app/src/main/res/layout/card.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/card.xml" value="0.335" />
         <entry key="app/src/main/res/layout/card_cell.xml" value="0.165" />
         <entry key="app/src/main/res/layout/crt_cell.xml" value="0.2072072072072072" />
         <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.14673913043478262" />

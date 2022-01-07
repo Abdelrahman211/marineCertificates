@@ -48,6 +48,7 @@ public class CrtFragment extends Fragment {
 
     private void setupData()
     {
+        CrtList = new ArrayList<>();
         CardItem circle = new CardItem("0", "STCW", R.drawable.stcw_crt,5,"Certificate",getResources().getString(R.string.STCWCRT_Discrip));
         CrtList.add(circle);
 

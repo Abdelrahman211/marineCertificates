@@ -50,6 +50,7 @@ public class CorFragment extends Fragment {
 
     private void setupData()
     {
+        CorList = new ArrayList<>();
         CardItem circle = new CardItem("0", "STCW", R.drawable.stcw_cor,5,"Certificate" ,getResources().getString(R.string.STCW_Discrip));
         CorList.add(circle);
 
@@ -65,16 +66,16 @@ public class CorFragment extends Fragment {
         CardItem octagon = new CardItem("4","Environmental Protection", R.drawable.enviro_cor,5,"Certificate",getResources().getString(R.string.EnvironmentalProtection_Discrip));
         CorList.add(octagon);
 
-        CardItem triangle2 = new CardItem("6","GMDSS", R.drawable.gmdss_cor,5,"Course",getResources().getString(R.string.GMDSS_Discrip));
+        CardItem triangle2 = new CardItem("5","GMDSS", R.drawable.gmdss_cor,5,"Course",getResources().getString(R.string.GMDSS_Discrip));
         CorList.add(triangle2);
 
-        CardItem square2 = new CardItem("7","Diving", R.drawable.diving_cor,5,"Course",getResources().getString(R.string.Diving_Discrip));
+        CardItem square2 = new CardItem("6","Diving", R.drawable.diving_cor,5,"Course",getResources().getString(R.string.Diving_Discrip));
         CorList.add(square2);
 
-        CardItem rectangle2 = new CardItem("8","Natural Gas & Petrochemicals", R.drawable.ngas_cor,5,"Course",getResources().getString(R.string.NaturalGas_Petrochemicals_Discrip));
+        CardItem rectangle2 = new CardItem("7","Natural Gas & Petrochemicals", R.drawable.ngas_cor,5,"Course",getResources().getString(R.string.NaturalGas_Petrochemicals_Discrip));
         CorList.add(rectangle2);
 
-        CardItem octagon2 = new CardItem("9","Meteorology & Hydrographic Survey", R.drawable.meteo_cor,5,"Course",getResources().getString(R.string.Meteorology_HydrographicSurvey_Discrip));
+        CardItem octagon2 = new CardItem("8","Meteorology & Hydrographic Survey", R.drawable.meteo_cor,5,"Course",getResources().getString(R.string.Meteorology_HydrographicSurvey_Discrip));
         CorList.add(octagon2);
     }
 

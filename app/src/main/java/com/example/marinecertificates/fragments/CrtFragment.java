@@ -49,7 +49,7 @@ public class CrtFragment extends Fragment {
     private void setupData()
     {
         CrtList = new ArrayList<>();
-        CardItem circle = new CardItem("0", "STCW", R.drawable.stcw_crt,5,"Certificate",getResources().getString(R.string.STCWCRT_Discrip));
+        CardItem circle = new CardItem("0", "STCW Certificate", R.drawable.stcw_crt,5,"Certificate",getResources().getString(R.string.STCWCRT_Discrip));
         CrtList.add(circle);
 
         CardItem triangle = new CardItem("1","Chief Officer", R.drawable.chif_ofcr_crt,5,"Certificate",getResources().getString(R.string.ChiefOfficer_Discrip));

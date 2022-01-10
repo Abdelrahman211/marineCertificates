@@ -51,7 +51,7 @@ public class CorFragment extends Fragment {
     private void setupData()
     {
         CorList = new ArrayList<>();
-        CardItem circle = new CardItem("0", "STCW", R.drawable.stcw_cor,5,"Certificate" ,getResources().getString(R.string.STCW_Discrip));
+        CardItem circle = new CardItem("0", "STCW Course", R.drawable.stcw_cor,5,"Certificate" ,getResources().getString(R.string.STCW_Discrip));
         CorList.add(circle);
 
         CardItem triangle = new CardItem("1","Marine Safety", R.drawable.mar_sfty_cor,5,"Certificate",getResources().getString(R.string.MarineSafety_Discrip));

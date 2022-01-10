@@ -10,7 +10,6 @@ import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
 import com.example.marinecertificates.fragments.CorFragment;
 import com.example.marinecertificates.fragments.CrtFragment;
 import com.example.marinecertificates.fragments.HomeFragment;
-import com.example.marinecertificates.fragments.PendingFragment;
 import com.example.marinecertificates.fragments.ProfileFragment;
 import com.example.marinecertificates.R;
 
@@ -53,9 +52,8 @@ public class MainActivity extends AppCompatActivity
             public void onShowItem(MeowBottomNavigation.Model item) {
             }
         });
-        //Set home count
-//        bottomNavigation.setCount(2,);
-        //Set profile fragment initially selected
+
+
         bottomNavigation.show(1,true);
 
         Fragment homefragment = new HomeFragment();
